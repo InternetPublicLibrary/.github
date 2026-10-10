@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Suggest a resource on the website
+    url: https://ipl.better-web.org/en-US/submit-resource/
+    about: Prefer a web form? Submit a site, article, book or educational resource directly on ipl.better-web.org.
+  - name: Contribute guide
+    url: https://ipl.better-web.org/en-US/contribute/
+    about: Ways to help the Internet Public Library (content, translation, code).
+  - name: Help translate
+    url: https://ipl.better-web.org/en-US/translate/
+    about: Translation guide for the en-US and pt-BR editions.

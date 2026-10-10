@@ -1,0 +1,119 @@
+name: Content suggestion
+description: Suggest a website, article, book or educational resource for the library.
+title: "content: "
+labels: ["type:content", "area:content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest one resource per issue. A curator will check it and add it to the YAML data.
+  - type: input
+    id: resource-title
+    attributes:
+      label: Resource title
+      placeholder: Introduction to Algorithms (MIT OpenCourseWare)
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: resource-type
+    attributes:
+      label: Resource type
+      options:
+        - Website / blog
+        - Article
+        - Book / e-book
+        - Course / educational material
+        - Tool
+        - Database / dataset
+        - Event / conference
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Library edition
+      description: Which edition should list it? (The resource itself may be in another language.)
+      multiple: true
+      options:
+        - en-US
+        - pt-BR
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Where it belongs on the site, e.g. Computing > Data Science > Machine Learning. Leave blank if unsure.
+    validations:
+      required: false
+  - type: textarea
+    id: eli5
+    attributes:
+      label: ELI5 (Explain it like I'm five)
+      description: What is this resource and why is it valuable, in plain words?
+      placeholder: A free online course that teaches how computers sort and search, with videos and exercises.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options:
+        - Free, no account needed
+        - Free, account required
+        - Freemium / partially paywalled
+        - Paid / paywalled
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: If known, e.g. CC BY 4.0, MIT, All rights reserved.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Curator checklist
+      value: |
+        - [ ] Link works and is not a duplicate
+        - [ ] Category confirmed
+        - [ ] Added to `_data/<lang>/...` with title, description and tags
+    validations:
+      required: false
+  - type: checkboxes
+    id: affiliation
+    attributes:
+      label: Disclosure
+      options:
+        - label: I am affiliated with this resource (author, owner or employee).
+          required: false
+  - type: dropdown
+    id: ai-disclosure
+    attributes:
+      label: AI disclosure
+      description: Was AI used to write this issue? AI is allowed, it just has to be disclosed. See CONTRIBUTING.md.
+      options:
+        - No AI used
+        - AI-assisted (human wrote and reviewed)
+        - AI-generated (human reviewed)
+    validations:
+      required: true
+  - type: input
+    id: ai-tools
+    attributes:
+      label: Which AI tools or models?
+      description: Only if you used AI.
+      placeholder: e.g. Claude (Claude Code), GitHub Copilot, ChatGPT
+    validations:
+      required: false

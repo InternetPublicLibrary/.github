@@ -1,0 +1,66 @@
+name: Task
+description: A maintainer / roadmap task (refactor, infrastructure, docs, chores).
+title: "task: "
+labels: ["type:task"]
+body:
+  - type: textarea
+    id: eli5
+    attributes:
+      label: ELI5 (Explain it like I'm five)
+      description: What is this task, in one or two plain sentences?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why now? Link the source (roadmap, TODO, discussion, related issues).
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach (technical details)
+      description: Files, commands, contracts, decisions to make.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+    validations:
+      required: false
+  - type: textarea
+    id: related
+    attributes:
+      label: Related
+      description: Related issues, PRs, specs (e.g. #12, docs/specs/001-search/).
+    validations:
+      required: false
+  - type: dropdown
+    id: ai-disclosure
+    attributes:
+      label: AI disclosure
+      description: Was AI used to write this issue? AI is allowed, it just has to be disclosed. See CONTRIBUTING.md.
+      options:
+        - No AI used
+        - AI-assisted (human wrote and reviewed)
+        - AI-generated (human reviewed)
+    validations:
+      required: true
+  - type: input
+    id: ai-tools
+    attributes:
+      label: Which AI tools or models?
+      description: Only if you used AI.
+      placeholder: e.g. Claude (Claude Code), GitHub Copilot, ChatGPT
+    validations:
+      required: false

@@ -1,0 +1,63 @@
+name: Feature request
+description: Propose a new capability or an improvement.
+title: "feat: "
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: eli5
+    attributes:
+      label: ELI5 (Explain it like I'm five)
+      description: What should be possible, in one or two plain sentences?
+      placeholder: I want to filter search results so I only see free books.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: Who needs this and why? What happens today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution (technical details)
+      description: How could it work? Files, plugins, data formats, alternatives considered.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: A checklist that tells us when this is done.
+      value: |
+        - [ ] 
+        - [ ] Works in both en-US and pt-BR editions
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this request deliberately does not include.
+    validations:
+      required: false
+  - type: dropdown
+    id: ai-disclosure
+    attributes:
+      label: AI disclosure
+      description: Was AI used to write this issue? AI is allowed, it just has to be disclosed. See CONTRIBUTING.md.
+      options:
+        - No AI used
+        - AI-assisted (human wrote and reviewed)
+        - AI-generated (human reviewed)
+    validations:
+      required: true
+  - type: input
+    id: ai-tools
+    attributes:
+      label: Which AI tools or models?
+      description: Only if you used AI.
+      placeholder: e.g. Claude (Claude Code), GitHub Copilot, ChatGPT
+    validations:
+      required: false

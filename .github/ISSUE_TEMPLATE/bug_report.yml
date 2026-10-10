@@ -1,0 +1,73 @@
+name: Bug report
+description: Something on the site or in the build is broken.
+title: "bug: "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please search existing issues first to avoid duplicates.
+  - type: textarea
+    id: eli5
+    attributes:
+      label: ELI5 (Explain it like I'm five)
+      description: One or two plain-language sentences anyone can understand. No jargon.
+      placeholder: When I click "Search" on the Portuguese home page, nothing happens.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to https://ipl.better-web.org/pt-BR/
+        2. Type "python" in the search box
+        3. Press Enter
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected vs. actual behavior
+      placeholder: |
+        Expected: a list of results.
+        Actual: the page reloads with no results.
+    validations:
+      required: true
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical details
+      description: URL, browser/OS, language edition (en-US/pt-BR), logs, build command output, screenshots.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know it is fixed?
+      value: |
+        - [ ] The steps above no longer reproduce the bug
+        - [ ] A test covers the regression (if practical)
+    validations:
+      required: false
+  - type: dropdown
+    id: ai-disclosure
+    attributes:
+      label: AI disclosure
+      description: Was AI used to write this issue? AI is allowed, it just has to be disclosed. See CONTRIBUTING.md.
+      options:
+        - No AI used
+        - AI-assisted (human wrote and reviewed)
+        - AI-generated (human reviewed)
+    validations:
+      required: true
+  - type: input
+    id: ai-tools
+    attributes:
+      label: Which AI tools or models?
+      description: Only if you used AI.
+      placeholder: e.g. Claude (Claude Code), GitHub Copilot, ChatGPT
+    validations:
+      required: false

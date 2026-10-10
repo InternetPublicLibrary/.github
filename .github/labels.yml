@@ -1,0 +1,77 @@
+# Standard label set for InternetPublicLibrary repositories.
+# GitHub does not apply this file automatically. Create or update labels with, e.g.:
+#   gh label create "type:bug" --color d73a4a --description "Something is broken" --force -R InternetPublicLibrary/<repo>
+# Rules: every issue/PR gets exactly one type:* and one ai:* label; area:* and priority:* as relevant.
+
+# Type (exactly one)
+- name: "type:bug"
+  color: "d73a4a"
+  description: "Something is broken"
+- name: "type:feature"
+  color: "a2eeef"
+  description: "New capability or improvement"
+- name: "type:content"
+  color: "0e8a16"
+  description: "Suggest or change a library resource"
+- name: "type:task"
+  color: "c5def5"
+  description: "Maintainer or roadmap task (refactor, infra, chore)"
+- name: "type:docs"
+  color: "0075ca"
+  description: "Documentation only"
+
+# Area (zero or more)
+- name: "area:build"
+  color: "fbca04"
+  description: "Jekyll build, Rake, plugins, page generation"
+- name: "area:ci"
+  color: "fef2c0"
+  description: "GitHub Actions, deployment, automated checks"
+- name: "area:i18n"
+  color: "bfd4f2"
+  description: "Languages, translation, en-US/pt-BR parity"
+- name: "area:wiki"
+  color: "d4c5f9"
+  description: "Wiki pages, editing, versioning"
+- name: "area:search"
+  color: "c2e0c6"
+  description: "Search index, search UI, discovery"
+- name: "area:ux"
+  color: "f9d0c4"
+  description: "Interface, accessibility, front-end performance"
+- name: "area:content"
+  color: "006b75"
+  description: "YAML data, curation, contribution workflow"
+
+# Priority (exactly one once triaged)
+- name: "priority:critical"
+  color: "b60205"
+  description: "Breaks the site or blocks everyone; fix now"
+- name: "priority:high"
+  color: "d93f0b"
+  description: "Important; next in line"
+- name: "priority:medium"
+  color: "fbca04"
+  description: "Normal priority"
+- name: "priority:low"
+  color: "0e8a16"
+  description: "Nice to have"
+
+# AI disclosure (exactly one; see CONTRIBUTING.md)
+- name: "ai:none"
+  color: "ededed"
+  description: "No AI was used"
+- name: "ai:assisted"
+  color: "c5def5"
+  description: "AI-assisted; human wrote and reviewed"
+- name: "ai:generated"
+  color: "5319e7"
+  description: "AI-generated; human reviewed"
+
+# Community
+- name: "good first issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+- name: "help wanted"
+  color: "008672"
+  description: "Extra attention is needed"
