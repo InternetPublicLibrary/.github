@@ -1,12 +1,35 @@
-## Hi there 👋
+# Internet Public Library
 
-<!--
+The Internet Public Library (IPL) is a free, curated, multilingual library of internet resources, organized by category and maintained by a community of contributors.
 
-**Here are some ideas to get you started:**
+Website: [ipl.better-web.org](https://ipl.better-web.org)
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## Repositories
+
+| Repository | What it holds |
+| --- | --- |
+| [IPLibrary-website](https://github.com/InternetPublicLibrary/IPLibrary-website) | The site itself: Jekyll layouts, plugins, YAML data and the build that generates category, section and resource pages. |
+| [en-US](https://github.com/InternetPublicLibrary/en-US) | English (US) content pages, included in the website as a git submodule. |
+| [pt-BR](https://github.com/InternetPublicLibrary/pt-BR) | Brazilian Portuguese content pages, included in the website as a git submodule. |
+| [.github](https://github.com/InternetPublicLibrary/.github) | This organization profile. |
+
+## Languages
+
+- English (US): [ipl.better-web.org/en-US/](https://ipl.better-web.org/en-US/)
+- Português (Brasil): [ipl.better-web.org/pt-BR/](https://ipl.better-web.org/pt-BR/)
+
+## How to contribute
+
+- **Suggest a resource:** use the [Submit a Resource](https://ipl.better-web.org/en-US/submit-resource/) page ([Enviar recurso](https://ipl.better-web.org/pt-BR/enviar-recurso/) in Portuguese), or open a pull request adding it to the YAML data in [IPLibrary-website](https://github.com/InternetPublicLibrary/IPLibrary-website).
+- **Translate:** see [Help Translate](https://ipl.better-web.org/en-US/translate/) and contribute to the [en-US](https://github.com/InternetPublicLibrary/en-US) or [pt-BR](https://github.com/InternetPublicLibrary/pt-BR) content repositories.
+- **Improve the site:** open an issue or pull request in [IPLibrary-website](https://github.com/InternetPublicLibrary/IPLibrary-website).
+
+More options are on the [Contribute](https://ipl.better-web.org/en-US/contribute/) page.
+
+## Tech stack
+
+Jekyll (Ruby), YAML data files, Tailwind CSS and HTMX, built with Rake and Yarn.
+
+## License
+
+The repositories in this organization are licensed under the [GNU General Public License v3.0](https://github.com/InternetPublicLibrary/IPLibrary-website/blob/master/LICENSE), as stated in each repository's `LICENSE` file.
