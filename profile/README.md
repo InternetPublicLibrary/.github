@@ -11,7 +11,7 @@ Website: [ipl.better-web.org](https://ipl.better-web.org)
 | [IPLibrary-website](https://github.com/InternetPublicLibrary/IPLibrary-website) | The site itself: Jekyll layouts, plugins, YAML data and the build that generates category, section and resource pages. |
 | [en-US](https://github.com/InternetPublicLibrary/en-US) | English (US) content pages, included in the website as a git submodule. |
 | [pt-BR](https://github.com/InternetPublicLibrary/pt-BR) | Brazilian Portuguese content pages, included in the website as a git submodule. |
-| [.github](https://github.com/InternetPublicLibrary/.github) | This organization profile. |
+| [.github](https://github.com/InternetPublicLibrary/.github) | This organization profile, plus the default issue forms, pull request template and [contributing guide](https://github.com/InternetPublicLibrary/.github/blob/main/CONTRIBUTING.md) used by every repository. |
 
 ## Languages
 
